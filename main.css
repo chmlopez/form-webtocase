@@ -1,0 +1,128 @@
+html {
+	font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: transparent;
+	background-image: url('coffee-background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+
+
+.container {
+	max-width: 650px;
+	height: auto;
+	background-color: #FFFFFF;
+	margin: 5% auto;
+	padding-bottom: 1rem;
+	opacity: 0.90;
+	
+}
+
+.form__top {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0 1rem;
+	border-top: solid .4rem #C7A446;
+	margin-bottom: 1rem;
+}
+
+.form__top h2 {
+	font-weight: bold;
+	color: #CAC8C8;
+	font-size: 18px;
+}
+
+h2 {
+	color: black !important;
+	font-family: Arial;
+	font-size: 100%;
+}
+
+h2 span {
+	color: black;
+	font-family: Arial;
+	font-size: 80%;
+}
+
+.form__reg {
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.form__right {
+	position: relative;
+    float: right;
+    margin-bottom: 20px;
+	margin-right: 0;
+	margin-left: 0;
+    clear: right;
+    width: 50%;
+}
+
+.form__left {
+	position: relative;
+    margin-right: 0;
+    margin-left: 30px;
+    float: left;
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.form__footer { 
+	width: 90%; 
+}
+
+.btn__form {
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	margin-top: 1rem;
+}
+
+.input, .btn__submit, .btn__reset{
+	background-color: #FFFFFF;
+	padding: .5rem;
+	margin: .5rem 0;
+	border: none;
+	border-bottom: solid #C7A446 .2rem;
+	transition: all .5s;
+	font-family: 'Arial' !important;
+}
+
+.input:focus {
+	border-bottom: solid #4F411C .2rem;
+}
+
+.btn__submit, .btn__reset {
+	width: 40%;
+	border-bottom: none;
+	background-color: #C7A446;
+	color: white;
+}
+
+.btn__reset {
+	background-color: #C7A446;
+}
+
+.btn__submit:hover {
+	background-color: #4F411C;
+}
+
+.btn__reset:hover{
+	background-color: #4F411C;
+}
+
+textarea {
+	margin: 0px;
+	width: 230px;
+	height: 115.5px;
+}
+
+
+/* @author Carlos Manuel Lopez */
