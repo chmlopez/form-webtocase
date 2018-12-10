@@ -25,7 +25,7 @@
 			<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
 			<input type=hidden name="orgid" value="00D0b000000uJ2G">
-			<input type=hidden name="retURL" value="http://www.xappi.com">
+			<input type=hidden name="retURL" value="http://www.xappia.com">
 
 			<!--  ----------------------------------------------------------------------  -->
 			<!--  NOTA: Estos campos son elementos de depuración opcionales. Elimine      -->
@@ -55,7 +55,7 @@
 				<input class="input" type="text" placeholder="&#x1F464;  Nombre" id="name" maxlength="80" name="name" size="30" required autofocus>
 				<input class="input" type="email" placeholder="&#x1F4E7;  Email" id="email" maxlength="80" name="email" size="30" required>
 				<input class="input" type="text" placeholder="&#x1F4DE;  Teléfono" id="phone" maxlength="80" name="phone" size="30" required>
-				<select class="input_type" name="combo" id="">
+				<select class="input_type" name="combo" id="Tipos_de_producto__c">
 					<option value="1" selected>&#x1F4DE; Tipo de Producto</option>
 				    <option value="2">Coffee Maker</option>
 				    <option value="3">Cápsulas</option>
@@ -67,6 +67,10 @@
 			  	<select class="input_type" name="combo" id="Dias_de_resolucion__c"> /*Ocultar campo*/
 			  		<option value="1">Días de resolución</option>
 			  		<option value="1">30 días</option>
+			  	</select>
+			  	<select class="input_type" name="combo" id="Priority"> /*Ocultar campo*/
+			  		<option value="1">Prioridad</option>
+			  		<option value="1">Media</option>
 			  	</select>
 			  		
 			</div>
