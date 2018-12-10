@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--@author Carlos Manuel Lopez-->
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main.css">
+	<title>Rocket</title>
+
+			<!--  ----------------------------------------------------------------------  -->
+			<!--  NOTA: Agregue el siguiente <META> elemento a su página <HEAD>.  Si es   -->
+			<!--  preciso, modifique el parámetro charset para especificar el conjunto    -->
+			<!--  de caracteres de su página HTML.                                        -->
+			<!--  ----------------------------------------------------------------------  -->
+
+			<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+			<!--  ----------------------------------------------------------------------  -->
+			<!--  NOTA: Agregue el siguiente <FORM> elemento a su página.                 -->
+			<!--  ----------------------------------------------------------------------  -->
+
+			<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+			<input type=hidden name="orgid" value="00D0b000000uJ2G">
+			<input type=hidden name="retURL" value="http://www.xappi.com">
+
+			<!--  ----------------------------------------------------------------------  -->
+			<!--  NOTA: Estos campos son elementos de depuración opcionales. Elimine      -->
+			<!--  los comentarios de estas líneas si desea realizar una prueba en el      -->
+			<!--  modo de depuración.                                                     -->
+			<!--  <input type="hidden" name="debug" value=1>                              -->
+			<!--  <input type="hidden" name="debugEmail"                                  -->
+			<!--  value="salesforce.alerts@xappia.com">                                   -->
+			<!--  ----------------------------------------------------------------------  -->
+</head>
+<body>
+
+		<!-- EMPIEZA EL FORMULARIO -->
+	<div class="container">
+		<div class="form__top">
+				<!-- LOGO DEL FORMULARIO-->
+				<img src="rocket_logo.png" alt="Logo Rocket" height="90px" weight="220">
+				<br><br>
+			<h2><span>Por favor, complete el formulario<br>para registrar un caso<br>en nuestro sistema.<br><br>Nos pondremos en contacto a la brevedad.</span></h2>
+		</div>		
+
+		<!-- CAMPOS DE SALESFORCE -->
+		<form class="form__reg" action="">
+
+			<!--COLUMNA IZQUIERDA DEL FORMULARIO-->
+			<div class="form__left">
+				<input class="input" type="text" placeholder="&#x1F464;  Nombre" id="name" maxlength="80" name="name" size="30" required autofocus>
+				<input class="input" type="email" placeholder="&#x1F4E7;  Email" id="email" maxlength="80" name="email" size="30" required>
+				<input class="input" type="text" placeholder="&#x1F4DE;  Teléfono" id="phone" maxlength="80" name="phone" size="30" required>
+				<select class="input_type" name="combo" id="">
+					<option value="1" selected>&#x1F4DE; Tipo de Producto</option>
+				    <option value="2">Coffee Maker</option>
+				    <option value="3">Cápsulas</option>
+			  	</select>
+			  	<select class="input_type" name="combo" id="type">/*Ocultar campo*/
+					<option value="1" selected>Tipo de Caso</option>
+				    <option value="2">Reparación</option>
+			  	</select>
+			  	<select class="input_type" name="combo" id="Dias_de_resolucion__c"> /*Ocultar campo*/
+			  		<option value="1">Días de resolución</option>
+			  		<option value="1">30 días</option>
+			  	</select>
+			  		
+			</div>
+
+			<!--COLUMNA DERECHA DEL FORMULARIO-->
+			<div class="form__right">
+	            <input class="input" type="text" placeholder="&#x1F4D1; Asunto" id="subject" maxlength="80" name="subject" size="30"> 
+				<textarea class="input" name="description" rows="4" type="text" wrap="soft" placeholder="&#x1F4DD; Descripción"></textarea>
+	        </div>
+
+	    <!--BOTONES PARA ENVIAR-->
+        <div class="btn__form form__footer">
+           	<input class="btn__submit" type="submit" value="ENVIAR">
+           	<input class="btn__reset" type="reset" value="BORRAR">
+        </div>
+		
+		</form>
+   		
+
+		
+	</div>
+	
+</body>
+</html>
